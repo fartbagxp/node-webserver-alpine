@@ -1,0 +1,30 @@
+{
+  "name": "webserver-alpine",
+  "version": "1.0.0",
+  "description": "webserver",
+  "main": "index.js",
+  "scripts": {
+    "docker:build": "docker build -t fartbagxp/node-webserver-alpine .",
+    "docker:run": "docker run -p 8080:8080 -d fartbagxp/node-webserver-alpine"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fartbagxp/node-webserver-alpine.git"
+  },
+  "author": "Boris Ning",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/fartbagxp/node-webserver-alpine/issues"
+  },
+  "homepage": "https://github.com/fartbagxp/node-webserver-alpine#readme",
+  "dependencies": {
+    "dotenv": "^5.0.1",
+    "express": "^4.16.3"
+  },
+  "devDependencies": {
+    "eslint": "^4.19.1",
+    "eslint-config-prettier": "^2.9.0",
+    "eslint-plugin-prettier": "^2.6.0",
+    "prettier": "^1.13.4"
+  }
+}
